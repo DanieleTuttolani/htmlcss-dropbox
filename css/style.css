@@ -145,6 +145,14 @@ body{
 }
 /*!PRESENTATION*/
 .presentation{
-    height: 300px;
-    
+    min-height: 400px;
+    margin-bottom: var(--marginb);
+
 }
+.presentation .left-col{
+    flex-basis: 60%;
+}
+.presentation .right-col{
+    flex-basis: 45%;
+}
+/*!ESPOSIZIONE*/
