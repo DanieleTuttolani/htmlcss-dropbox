@@ -4,7 +4,91 @@
     padding: 0;
 }
 /* tavolozza colori e font
-font-family: 'Open Sans', sans-serif;  da 100 a 500 di fw*/
+font-family: 'Open Sans', sans-serif;  da 300 a 500 di fw
+        #0061ff blu acceso
+*/
+
+
+
+
+
+
+
+
+/*utilità*/
+.bordo{
+    border: 2px solid black;
+}
+.container-main{
+    max-width: 1500px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*generale*/
-/*utilità*/
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-body{
+    height: 80px;
+    align-items: center;
+}
+.header-body>*{
+    flex-basis: 50%;
+    
+}
+/*head left*/
+.head-left{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+/*head right*/
+.head-right,.head-content ul{
+    justify-content: flex-end;
+}
+/*HEAD UTILITYS*/
+.head-content ul{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    align-items: center;
+}
+.head-content ul li{
+    padding-left: 45px;
+    font-size: 17px;
+    
+}
+.head-content ul button{
+    background-color: #0061ff;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+}
