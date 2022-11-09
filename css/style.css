@@ -36,7 +36,9 @@ font-family: 'Open Sans', sans-serif;  da 300 a 500 di fw
 :root{
     --marginb: 70px;
 }
-
+.bordo-b{
+    border: 2px solid white;
+}
 
 
 
@@ -200,9 +202,36 @@ body{
     min-height: 300px;
 }
 /*!FAQ*/
+.faq{
+    margin-bottom: var(--marginb);
+}
 .faq-title{
     height: 150px;
 }
 .faq-section{
     min-height: 100px;
+}
+
+
+
+
+
+
+/*!FOOTER*/
+footer{
+    color: white;
+}
+.footer-bgc{
+    background-color: black;
+    padding: 30px;
+}
+.footer-body{
+    min-height: 500px;
+}
+.foot-col{
+    flex-basis: 25%;
+}
+.lang{
+    height: 100px;
+    width: 150px;
 }
