@@ -156,3 +156,18 @@ body{
     flex-basis: 45%;
 }
 /*!ESPOSIZIONE*/
+.esposition{
+    height: 800px;
+    margin-bottom: var(--marginb);
+}
+.esposition .title{
+    min-height: 60px;
+}
+.espo-box{
+    min-height: calc(100% - 60px);
+    flex-wrap: wrap;
+}
+.espo-box .card{
+    width: calc(100% / 3);
+    height: 300px;
+}
