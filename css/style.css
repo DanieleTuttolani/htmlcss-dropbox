@@ -64,7 +64,7 @@ body{
 }
 
 
-
+/*!HEAD*/
 /*!head left*/
 .head-left{
     display: flex;
@@ -157,7 +157,7 @@ body{
 }
 /*!ESPOSIZIONE*/
 .esposition{
-    height: 800px;
+    min-height: 800px;
     margin-bottom: var(--marginb);
 }
 .esposition .title{
@@ -170,4 +170,24 @@ body{
 .espo-box .card{
     width: calc(100% / 3);
     height: 300px;
+    margin-bottom: 20px;
+}
+/*!FACTS*/
+.facts{
+    min-height: 150px;
+    margin-bottom: var(--marginb);
+}
+/*!SPONSORS*/
+.sponsor{
+    min-height: 600px;
+}
+.sponsor .col{
+    flex-basis: 33%;
+}
+.sponsor .left,.right{
+    flex-wrap: wrap;
+}
+.col .square{
+    flex-basis: 50%;
+    height: calc(100% / 2);
 }
