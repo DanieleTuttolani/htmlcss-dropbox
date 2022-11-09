@@ -191,3 +191,11 @@ body{
     flex-basis: 50%;
     height: calc(100% / 2);
 }
+/*!TRY*/
+.try-bgc{
+    background-color: #b4d0e7;
+    margin-bottom: var(--marginb);
+}
+.try{
+    min-height: 300px;
+}
