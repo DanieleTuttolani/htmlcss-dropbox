@@ -3,9 +3,10 @@
     margin: 0;
     padding: 0;
 }
-/* tavolozza colori e font
+/* !tavolozza colori e font
 font-family: 'Open Sans', sans-serif;  da 300 a 500 di fw
         #0061ff blu acceso
+        #b4d0e7 jumbo bgc
 */
 
 
@@ -15,12 +16,12 @@ font-family: 'Open Sans', sans-serif;  da 300 a 500 di fw
 
 
 
-/*utilità*/
+/*!utilità*/
 .bordo{
     border: 2px solid black;
 }
 .container-main{
-    max-width: 1500px;
+    max-width: 1300px;
     margin: auto;
 }
 .flex{
@@ -44,7 +45,7 @@ font-family: 'Open Sans', sans-serif;  da 300 a 500 di fw
 
 
 
-/*generale*/
+/*!generale*/
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -57,21 +58,24 @@ body{
     flex-basis: 50%;
     
 }
-/*head left*/
+
+
+
+/*!head left*/
 .head-left{
     display: flex;
     align-items: center;
 }
 
 
-
-
-
-/*head right*/
+/*!head right*/
 .head-right,.head-content ul{
     justify-content: flex-end;
 }
-/*HEAD UTILITYS*/
+
+
+
+/*!HEAD UTILITYS*/
 .head-content ul{
     display: flex;
     list-style-type: none;
@@ -91,4 +95,27 @@ body{
     font-size: 16px;
     cursor: pointer;
     margin-right: 20px;
+}
+
+/*! MAIN*/
+/*!JUMBO*/
+.jumbo-bgc{
+    background-color: #b4d0e7;
+    height: 700px;
+}
+.jumbo{
+    height: 700px;
+}
+.jumbo .jumbo-title{
+    height: 40%;
+}
+.jumbo .jumbo-info{
+    display: flex;
+    height: calc(700px - 40%);
+}
+.jumbo-info .jumbo-text{
+    flex-basis: 40%;
+}
+.jumbo-info .jumbo-img{
+    flex-basis: 60%;
 }
