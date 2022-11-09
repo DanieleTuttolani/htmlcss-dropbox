@@ -199,3 +199,10 @@ body{
 .try{
     min-height: 300px;
 }
+/*!FAQ*/
+.faq-title{
+    height: 150px;
+}
+.faq-section{
+    min-height: 100px;
+}
