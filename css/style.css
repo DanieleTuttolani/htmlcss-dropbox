@@ -28,10 +28,14 @@ font-family: 'Open Sans', sans-serif;  da 300 a 500 di fw
     display: flex;
 }
 
+.container-alt{
+    max-width: 1000px;
+    margin: auto;
+}
 
-
-
-
+:root{
+    --marginb: 70px;
+}
 
 
 
@@ -102,6 +106,7 @@ body{
 .jumbo-bgc{
     background-color: #b4d0e7;
     height: 700px;
+    margin-bottom: var(--marginb);
 }
 .jumbo{
     height: 700px;
@@ -118,4 +123,28 @@ body{
 }
 .jumbo-info .jumbo-img{
     flex-basis: 60%;
+}
+/*!TARIFFE*/
+.tariffe{
+    display: flex;
+    min-height: 500px;
+    gap: 20px;
+    margin-bottom: var(--marginb);
+}
+.tariffe .column{
+    flex-basis: 32%;
+}
+ .tar-info{
+    height: 50px;
+}
+
+.tariffa-special{
+    height: 150px;
+    margin-bottom: var(--marginb);
+    
+}
+/*!PRESENTATION*/
+.presentation{
+    height: 300px;
+    
 }
