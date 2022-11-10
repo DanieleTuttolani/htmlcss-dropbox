@@ -193,7 +193,7 @@ main{
 .tar-info h3{
     font-size: 23px;
 }
-.tar-info p:first-of-type{
+.tar-info p:first-child{
     padding-top: 15px;
     font-weight: 800;
 }
@@ -204,7 +204,12 @@ main{
 .tar-body ul>*{
     padding-bottom: 15px;
     list-style-type: none;
+    display: flex;
 }
+.tar-body i{
+    padding: 0 10px 0 0 ;
+}
+
 .tar-body button{
     background-color: var(--blue-color-button);
     margin-left: 20px;
@@ -225,16 +230,28 @@ main{
 .tar-foot{
     padding: 25px;
 }
-.tar-foot p:first-of-type{
+.tar-foot p:first-child{
     padding-top: 15px;
     font-weight: 800;
     margin-bottom: 20px;
 }
+.tar-foot li p{
+    display: inline-block;
+}
+
+    
+
 .tar-foot ul>*{
     list-style-type: none;
     padding-bottom: 15px;
+    display: flex;
 }
-
+.tar-foot ul{
+    flex-direction: column;
+}
+.tar-foot i{
+    color: #0093ce;
+}
 
 
 
@@ -250,6 +267,9 @@ main{
 .tar-special{
     text-align: center;
     padding: 5px;
+}
+.tar-special i{
+    padding: 0 10px 0 0 ;
 }
 .special-body{
     padding: 15px;
@@ -359,7 +379,16 @@ padding-bottom: 10px;
     flex-basis: 50%;
     height: calc(100% / 2);
     position: relative;
+    transition: 0.5s linear;
 }
+
+.square:hover {
+    filter: invert(1);
+}
+
+
+
+
 
 .sponsor .square img{
     width: 100%;
@@ -461,8 +490,9 @@ padding-bottom: 10px;
 }
 .faq-section{
     min-height: 100px;
-    line-height: 100px;
+    align-items: center;
     border-bottom: 1px solid black;
+    justify-content: space-between;
 }
 
 
@@ -496,6 +526,6 @@ footer{
 .lang{
     height: 100px;
     width: 150px;
-    line-height: 100px;
     color: grey ;
+    align-items: center;
 }
