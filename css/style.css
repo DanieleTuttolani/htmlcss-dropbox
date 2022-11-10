@@ -168,7 +168,7 @@ main{
     font-size: 40px;
 }
 .tariffe .column{
-    flex-basis: 32%;
+    flex-basis: 33%;
 }
  .tar-name{
     height: 50px;
@@ -306,13 +306,31 @@ padding-bottom: 10px;
 .card .card-img{
     height: 50%;
 }
+.card-img img{
+    width: 100%;
+}
 .card .card-info{
     height: 50%;
+}
+.card-info p{
+    padding-top: 20px;
+}
+.card-info p:first-child{
+    font-weight: 500;
+    font-size: 24px;
+}
+.card-info p:last-child{
+    font-weight: 300;
 }
 /*!FACTS*/
 .facts{
     min-height: 150px;
     margin-bottom: var(--marginb);
+    padding-right: 300px;
+}
+.facts h2{
+    font-size: 35px;
+    margin-bottom: 20px;
 }
 /*!SPONSORS*/
 .sponsor{
@@ -327,6 +345,11 @@ padding-bottom: 10px;
 .col .square{
     flex-basis: 50%;
     height: calc(100% / 2);
+}
+
+.sponsor .square img{
+    width: 100%;
+    display: block;
 }
 /*!TRY*/
 .try-bgc{
