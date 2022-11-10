@@ -270,10 +270,19 @@ padding-bottom: 10px;
 
 }
 .presentation .left-col{
-    flex-basis: 60%;
+    flex-basis: 70%;
+}
+.presentation .left-col img{
+    width: 100%;
+    display: block;
 }
 .presentation .right-col{
     flex-basis: 45%;
+    padding: 50px 30px;
+}
+.presentation .right-col h3{
+    font-size: 25px;
+    margin-bottom: 15px;
 }
 /*!ESPOSIZIONE*/
 .esposition{
@@ -282,6 +291,7 @@ padding-bottom: 10px;
 }
 .esposition .title{
     min-height: 60px;
+    font-size: 25px;
 }
 .espo-box{
     min-height: calc(100% - 60px);
