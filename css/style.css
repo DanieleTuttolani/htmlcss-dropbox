@@ -35,13 +35,22 @@ font-family: 'Open Sans', sans-serif;  da 300 a 500 di fw
 
 :root{
     --marginb: 70px;
+    --blue-color-button:  #0061ff
 }
 .bordo-b{
     border: 2px solid white;
 }
+button{
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
 
-
-
+.mb-30{
+    margin-bottom: var(--marginb);
+}
 
 
 
@@ -59,6 +68,12 @@ body{
 .header-body{
     height: 80px;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
 }
 .header-body>*{
     flex-basis: 50%;
@@ -94,16 +109,15 @@ body{
     
 }
 .head-content ul button{
-    background-color: #0061ff;
-    color: white;
-    padding: 10px 20px;
-    border: 0;
-    font-size: 16px;
-    cursor: pointer;
+    background-color: var(--blue-color-button);
     margin-right: 20px;
 }
 
+
 /*! MAIN*/
+main{
+    padding-top: 70px;
+}
 /*!JUMBO*/
 .jumbo-bgc{
     background-color: #b4d0e7;
@@ -116,15 +130,31 @@ body{
 .jumbo .jumbo-title{
     height: 40%;
 }
+.jumbo-title h1{
+    font-size: 80px;
+    padding: 20px;
+    font-weight: 800;
+}
 .jumbo .jumbo-info{
     display: flex;
     height: calc(700px - 40%);
 }
 .jumbo-info .jumbo-text{
     flex-basis: 40%;
+    padding: 40px;
+}
+.jumbo-text button{
+    background-color: var(--blue-color-button);
+    margin: 30px 0;
 }
 .jumbo-info .jumbo-img{
     flex-basis: 60%;
+    position: relative;
+}
+.jumbo-img img{
+    width: 100%;
+    position: absolute;
+    top: 50px;
 }
 /*!TARIFFE*/
 .tariffe{
@@ -133,18 +163,106 @@ body{
     gap: 20px;
     margin-bottom: var(--marginb);
 }
+.tariffe-title{
+    margin-top: 100px;
+    font-size: 40px;
+}
 .tariffe .column{
     flex-basis: 32%;
 }
- .tar-info{
+ .tar-name{
     height: 50px;
+    text-align: center;
+    line-height: 50px;
 }
 
+
+.tar-info{
+    padding: 25px;
+    line-height: 25px;
+}
+.tar-info h3{
+    font-size: 23px;
+}
+.tar-info p:first-of-type{
+    padding-top: 15px;
+    font-weight: 800;
+}
+
+.tar-body{
+    padding: 25px;
+}
+.tar-body ul>*{
+    padding-bottom: 15px;
+    list-style-type: none;
+}
+.tar-body button{
+    background-color: var(--blue-color-button);
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.tar-body .divisorio{
+    border: 1px solid lightgrey;
+    width: 70px;
+    margin-top: 30px;
+}
+
+
+
+.tar-foot{
+    padding: 25px;
+}
+.tar-foot p:first-of-type{
+    padding-top: 15px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.tar-foot ul>*{
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
 .tariffa-special{
-    height: 150px;
+    min-height: 150px;
     margin-bottom: var(--marginb);
     
 }
+.tar-special{
+    text-align: center;
+    padding: 5px;
+}
+.special-body{
+    padding: 15px;
+    flex-basis: 70%;
+    height: 100px;
+}
+.special-body h3:first-child{
+padding-bottom: 10px;
+}
+.special-foot{
+    padding: 20px;
+    flex-basis: 30%;
+    justify-content: flex-end;
+}
+.special-foot button{
+    background-color: var(--blue-color-button); 
+}
+.special-info{
+    width: 70%;
+    padding: 15px;
+}
+
 /*!PRESENTATION*/
 .presentation{
     min-height: 400px;
@@ -171,7 +289,7 @@ body{
 }
 .espo-box .card{
     width: calc(100% / 3);
-    height: 450px;
+    height: 500px;
     margin-bottom: 20px;
     
 }
